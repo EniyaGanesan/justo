@@ -42,7 +42,7 @@ const login = async (req, res) => {
 const generateLink = async (req, res) => {
     const { username } = req.body;
     const token = generateToken({ username });
-    res.json({ link: `http://localhost:3000/auth/link/${token}` });
+    res.json({ link: `http://localhost:8000/auth/link/${token}` });
 };
 
 const linkLogin = async (req, res) => {
